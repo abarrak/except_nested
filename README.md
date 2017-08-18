@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/abarrak/except_nested.svg?branch=master)](https://travis-ci.org/abarrak/except_nested)
 [![Dependency Status](https://gemnasium.com/badges/github.com/abarrak/except_nested.svg)](https://gemnasium.com/github.com/abarrak/except_nested)
 
-**except_nested** allows exclusion of given hash keys at varies depth of the hash.
+**except_nested** allows exclusion of given hash keys at various depth of the hash.
 
 It's an extended version of active_support `#except` hash utility.
 

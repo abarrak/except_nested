@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["abdullah@abarrak.com"]
 
   spec.summary       = "An extended version of active_support #except hash utility."
-  spec.description   = "except_nested allows exclusion of given hash keys at varies depth."
+  spec.description   = "except_nested allows exclusion of given hash keys at various depth."
   spec.homepage      = "https://github.com/abarrak/except_nested"
   spec.license       = "MIT"
 
