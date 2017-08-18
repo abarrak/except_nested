@@ -17,8 +17,8 @@ class Hash
 
   # Removes the given nested keys from hash and returns it.
   #   hash = { a: true, b: { x: true, y: false }, c: nil }
-  #   hash.except_nested(b: [:y])       # => { a: true, b: { x: true }, c: nil }
-  #   hash                              # => { a: true, b: false }
+  #   hash.except_nested!(b: [:y])       # => { a: true, b: { x: true }, c: nil }
+  #   hash                               # => { a: true, b: { x: true }, c: nil }
   def except_nested!(*nested_keys)
     nested_keys.each do |key|
       if key.is_a?(Hash)
