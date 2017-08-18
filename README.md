@@ -28,10 +28,47 @@ $ gem install except_nested
 ```
 
 ## Usage
-TODO ...
+Given the following hash:
+
+```ruby
+h = { name: 'Zohoor', degree: 'Psychology', preferences: { color: 'mauve', drink: 'coffee', pet: 'cat' } }
+```
+You can deep except keys:
+
+```ruby
+h.except_nested(:degree, preferences: [:color, :pet])
+=> { name: "Zohoor", preferences: { drink: "coffee" } }
+
+h.except_nested(preferences: :pet)
+=> { name: "Zohoor", degree: "Psychology", preferences: { color: "mauve", drink: "coffee" } }
+
+h.except_nested(preferences: [:pet], :name)
+=> { degree: "Psychology", preferences: { color: "mauve", drink: "coffee" } }
+
+h.except_nested(:degree, preferences: [:color, :pet, :drink])
+=> { name: "Zohoor" }
+
+# original hash is preserved ..
+h
+=> { name: "Zohoor", degree: "Psychology", preferences: {color: "mauve", drink: "coffee", pet: "cat"}}
+```
+
+Or exclude keys at first level just like normal `#except` does:
+
+```ruby
+h.except_nested(:name)
+=> { degree: "Psychology", preferences: { color: "mauve", drink: "coffee", pet: "cat" } }
+
+h.except_nested(:name, :degree)
+=> { preferences: { color: "mauve", drink: "coffee", pet: "cat" } }
+
+h.except_nested(:name, :degree, :preferences)
+=> {}
+```
 
 ## Documentation
-TODO ...
+
+[RDoc version](http://www.rubydoc.info/gems/except_nested) at RubyDoc.
 
 ## Development
 
