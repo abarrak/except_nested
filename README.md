@@ -5,7 +5,7 @@
 
 **except_nested** allows exclusion of given hash keys at varies depth of the hash.
 
-It's an extended version of active_support `#except` hash utility
+It's an extended version of active_support `#except` hash utility.
 
 ## Installation
 
