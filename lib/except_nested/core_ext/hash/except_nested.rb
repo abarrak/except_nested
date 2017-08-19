@@ -24,7 +24,7 @@ class Hash
       if key.is_a?(Hash)
         key.each do |sub_key, sub_value|
           if sub_value.is_a?(Array)
-            self[sub_key].delete_if { |k, v| sub_value.include?(k) }
+            self[sub_key].delete_if { |k, _| sub_value.include?(k) }
             delete(sub_key) if self[sub_key].empty?
           elsif sub_value.is_a?(Hash)
             self[sub_key].except_nested!(sub_value)
@@ -33,7 +33,7 @@ class Hash
           end
         end
       elsif key.is_a?(Array)
-        delete_if { |k, v| k == key.first }
+        delete_if { |k, _| k == key.first }
       else
         delete(key)
       end

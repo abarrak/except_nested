@@ -88,19 +88,19 @@ RSpec.describe ExceptNested do
       subject { { a: 1, b: { b1: true, b2: false }, c: { d: { x: 100, y: 200 }, e: true } } }
 
       it "accepts nested keys list in and filter accordingly" do
-      f = subject.except_nested(c: { d: :x })
+        f = subject.except_nested(c: { d: :x })
 
-      expect(f).not_to eq(subject)
-      [:a, :b, :c].each do |k|
-        expect(f).to have_key(k)
-      end
+        expect(f).not_to eq(subject)
+        [:a, :b, :c].each do |k|
+          expect(f).to have_key(k)
+        end
 
-      expect(f[:c]).to have_key(:d)
-      expect(f[:c]).to have_key(:e)
+        expect(f[:c]).to have_key(:d)
+        expect(f[:c]).to have_key(:e)
 
-      expect(f[:c][:d]).to have_key(:y)
-      expect(f[:c][:d]).not_to have_key(:x)
-      expect(f).to include({ c: { d: { y: 200 }, e: true } })
+        expect(f[:c][:d]).to have_key(:y)
+        expect(f[:c][:d]).not_to have_key(:x)
+        expect(f).to include({ c: { d: { y: 200 }, e: true } })
       end
     end
   end
