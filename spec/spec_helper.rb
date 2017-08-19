@@ -1,4 +1,8 @@
 require "bundler/setup"
+
+require 'simplecov'
+SimpleCov.start { add_filter "/spec/" }
+
 require "except_nested"
 
 RSpec.configure do |config|
