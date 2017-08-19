@@ -34,6 +34,7 @@ Given the following hash:
 ```ruby
 h = { name: 'Zohoor', degree: 'Psychology', preferences: { color: 'mauve', drink: 'coffee', pet: 'cat' } }
 ```
+
 You can deep except keys:
 
 ```ruby
@@ -51,10 +52,10 @@ h.except_nested(:degree, preferences: [:color, :pet, :drink])
 
 # original hash is preserved ..
 h
-=> { name: "Zohoor", degree: "Psychology", preferences: {color: "mauve", drink: "coffee", pet: "cat"}}
+=> { name: "Zohoor", degree: "Psychology", preferences: { color: "mauve", drink: "coffee", pet: "cat" } }
 ```
 
-Or exclude keys at first level just like normal `#except` does:
+Or exclude keys in the first level just like normal `#except` does:
 
 ```ruby
 h.except_nested(:name)
