@@ -1,6 +1,7 @@
 # Except Nested
 [![Gem Version](https://badge.fury.io/rb/except_nested.svg)](https://rubygems.org/gems/except_nested)
 [![Build Status](https://travis-ci.org/abarrak/except_nested.svg?branch=master)](https://travis-ci.org/abarrak/except_nested)
+[![Test Coverage](https://codeclimate.com/github/abarrak/except_nested/badges/coverage.svg)](https://codeclimate.com/github/abarrak/except_nested/coverage)
 [![Dependency Status](https://gemnasium.com/badges/github.com/abarrak/except_nested.svg)](https://gemnasium.com/github.com/abarrak/except_nested)
 
 **except_nested** allows exclusion of given hash keys at various depth of the hash.
@@ -65,6 +66,8 @@ h.except_nested(:name, :degree)
 h.except_nested(:name, :degree, :preferences)
 => {}
 ```
+
+It works for any nested levels. Check [test case](https://github.com/abarrak/except_nested/blob/master/spec/except_nested_spec.rb#L87-L105) for 3-level depth example.
 
 ## Documentation
 
