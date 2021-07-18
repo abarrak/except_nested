@@ -1,6 +1,6 @@
 # Except Nested
 [![Gem Version](https://badge.fury.io/rb/except_nested.svg)](https://rubygems.org/gems/except_nested)
-[![Build Status](https://travis-ci.org/abarrak/except_nested.svg?branch=master)](https://travis-ci.org/abarrak/except_nested)
+[![Build Status](https://www.travis-ci.com/abarrak/except_nested.svg?branch=master)](https://www.travis-ci.com/abarrak/except_nested)
 [![Test Coverage](https://codeclimate.com/github/abarrak/except_nested/badges/coverage.svg)](https://codeclimate.com/github/abarrak/except_nested/coverage)
 
 **except_nested** allows exclusion of given hash keys at various depth of the hash.
