@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["abdullah@abarrak.com"]
 
   spec.summary       = "An extended version of active_support #except hash utility."
-  spec.description   = "except_nested allows exclusion of given hash keys at various depth."
+  spec.description   = "except_nested allows extraction of given hash values at various depth of the hash."
   spec.homepage      = "https://github.com/abarrak/except_nested"
   spec.license       = "MIT"
 
@@ -25,9 +25,9 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency 'activesupport', '~> 5'
-  spec.add_development_dependency "bundler", "~> 1.15"
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "bundler", ">= 2.2.20"
+  spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "simplecov", "~> 0.12.0"
+  spec.add_development_dependency "simplecov", "~> 0.18"
   spec.add_development_dependency "codeclimate-test-reporter", "~> 0.4.8"
 end

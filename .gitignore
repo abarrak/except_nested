@@ -34,3 +34,5 @@
 
 # Ignore publish script due to credentials
 .publish
+
+codeclimate-test-reporter
