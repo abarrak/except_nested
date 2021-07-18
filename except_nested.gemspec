@@ -28,6 +28,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", ">= 2.2.20"
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "simplecov", "~> 0.18"
+  spec.add_development_dependency "simplecov", "~> 0.17"
   spec.add_development_dependency "codeclimate-test-reporter", "~> 0.4.8"
 end

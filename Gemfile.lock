@@ -51,7 +51,7 @@ DEPENDENCIES
   except_nested!
   rake (~> 13.0)
   rspec (~> 3.0)
-  simplecov (~> 0.18)
+  simplecov (~> 0.17)
 
 BUNDLED WITH
    2.2.20
