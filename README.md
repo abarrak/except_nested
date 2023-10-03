@@ -38,7 +38,7 @@ h = { name: 'Zohoor', degree: 'Psychology', preferences: { color: 'mauve', drink
 You can deep except keys:
 
 ```ruby
-h.except_nested(:name, preferences: [:color, :pet])
+h.except_nested(:degree, preferences: [:color, :pet])
 => { name: "Zohoor", preferences: { drink: "coffee" } }
 
 h.except_nested(preferences: :pet)
