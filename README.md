@@ -1,6 +1,6 @@
 # Except Nested
 [![Gem Version](https://badge.fury.io/rb/except_nested.svg)](https://rubygems.org/gems/except_nested)
-[![Build Status](https://www.travis-ci.com/abarrak/except_nested.svg?branch=master)](https://www.travis-ci.com/abarrak/except_nested)
+[![Build Status](https://app.travis-ci.com/abarrak/except_nested.svg?token=6srXbW1inBqbcVxZhTbQ&branch=master)](https://app.travis-ci.com/abarrak/except_nested)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/9c4a7dd09de4a3b328da/test_coverage)](https://codeclimate.com/github/abarrak/except_nested/test_coverage)
 [![Maintainability](https://api.codeclimate.com/v1/badges/9c4a7dd09de4a3b328da/maintainability)](https://codeclimate.com/github/abarrak/except_nested/maintainability)
 
